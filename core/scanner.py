@@ -1,6 +1,7 @@
 import os
 import fleep
 
+#print("here")
 
 def scanfile(path):
     try:

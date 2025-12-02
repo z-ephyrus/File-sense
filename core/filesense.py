@@ -1,10 +1,11 @@
 import argparse
 import json
 import os
-from main.scanner import scanfile, scandirectory
+from core.scanner import scanfile, scandirectory
 
 
 def main():
+    #print("hi")
     parser = argparse.ArgumentParser(
         description="Detect file types using magic bytes (powered by fleep)"
     )
@@ -20,7 +21,7 @@ def main():
             if args.recursive:
                 results.extend(scandirectory(path))
             else:
-                print(f"Skipping directory (use --recursive)")
+                print("Skipping directory (use --recursive)")
         else:
             results.append(scanfile(path))
 
@@ -36,3 +37,7 @@ def main():
                 print(f"  Extension: {r['extension']}")
                 print(f"  MIME: {r['mime']}")
         print()
+
+
+if __name__ == "__main__":
+    main()

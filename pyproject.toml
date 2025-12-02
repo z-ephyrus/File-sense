@@ -14,7 +14,7 @@ requires-python = ">=3.8"
 dependencies = ["fleep"]
 
 [project.scripts]
-filesense = "filesense.main:main"
+filesense = "core.filesense:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
