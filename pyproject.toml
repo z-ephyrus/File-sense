@@ -17,4 +17,4 @@ dependencies = ["fleep"]
 filesense = "core.filesense:main"
 
 [tool.setuptools.packages.find]
-where = ["."]
+where = ["core"]
