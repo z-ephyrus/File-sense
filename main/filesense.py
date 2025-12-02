@@ -1,7 +1,7 @@
 import argparse
 import json
 import os
-from .scanner import scanfile, scandirectory
+from main.scanner import scanfile, scandirectory
 
 
 def main():
