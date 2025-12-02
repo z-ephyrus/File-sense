@@ -15,7 +15,7 @@ def scanfile(path):
             "mime": info.mime,
         }
     except Exception as e:
-        return {"error": str(e)}
+        return {"file":path ,"error": str(e)}
 
 
 def scandirectory(directory):
