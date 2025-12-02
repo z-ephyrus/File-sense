@@ -1,0 +1,2 @@
+[console_scripts]
+filesense = filesense.main:main
